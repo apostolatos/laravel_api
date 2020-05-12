@@ -36,6 +36,11 @@ class Client extends Model
         return $this->hasMany(\App\Models\Payment::class, 'user_id');
     }
 
+    public function last_payment()
+    {
+        return $this->hasOne(\App\Models\Payment::class, 'user_id')->orderBy('created_at', 'asc');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

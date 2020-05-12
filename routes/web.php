@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'ClientController@index');
+Route::get('/{from?}/{to?}', 'ClientController@index');
+Route::post('/submit', 'ClientController@submit');
 
