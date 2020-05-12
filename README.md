@@ -28,10 +28,10 @@ Copy **.env.example**
 Change the name with .env and make your own settings in .env file.
 
 - DB_HOST=localhost
-* **DB_PORT=3306**
-* **DB_DATABASE=laravel_api**
-* **DB_USERNAME=root**
-* **DB_PASSWORD=password**
+-DB_PORT=3306
+-DB_DATABASE=laravel_api
+-DB_USERNAME=root
+-DB_PASSWORD=password
 
 Once the database is created, run the following console commands to install tables.
 
